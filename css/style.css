@@ -35,6 +35,7 @@ body {
     display: inline-block;
     margin-right: 25px;
     margin-top: 10px;
+    position: relative;
 }
 
 .ul1 li a {
@@ -60,6 +61,36 @@ nav.navigation a.hov::after {
     width: 0;
     display: block;
     background: blue;
+}
+
+.drop_down {
+    position: absolute;
+}
+
+.drop_down ul li {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100px;
+    padding: 11px;
+    background-color: #183a9d;
+    margin-left: -15px;
+}
+
+.drop_down {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    text-align: center;
+    visibility: hidden;
+}
+
+.block_d:hover .drop_down {
+    visibility: visible;
+    cursor: pointer;
+    transition: 2s;
+    height: 100%;
 }
 
 .slider {
